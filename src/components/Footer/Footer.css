@@ -1,0 +1,146 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 170px;
+}
+.footer-top{
+display: flex;
+justify-content: space-between;
+}
+.footer-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* adds spacing between h1 and p */
+  }
+  
+  .footer-heading {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .footer-heading h1 {
+    position: relative;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 30px;
+    z-index: 1;
+  }
+  
+  .footer-heading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .footer-left p {
+    font-size: 20px;
+    max-width: 400px;
+    margin-top: 10px; /* space from heading */
+    color: white;
+  }
+  .footer-top-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer-email-input{
+    display: flex;
+    gap: 30px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: #32323b;
+    padding-right: 80px;
+  }
+  .footer-email-input:hover{
+    border: 2px solid whitesmoke;
+  }
+  .footer-email-input input{
+    outline: none;
+    border: none;
+        background: transparent;
+        color: #a0a0a0;
+        font-family: outfit;
+        font-size: 18px;
+  }
+  .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .footer-bottom-right{
+    display: flex;
+    gap: 50px;
+    /* margin:  50px; */
+  }
+
+
+
+  @media (max-width: 768px) {
+    .footer {
+      margin: 50px 20px;
+      gap: 40px;
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .footer-left {
+      align-items: center;
+    }
+  
+    .footer-heading h1 {
+      font-size: 40px;
+      padding: 10px 20px;
+    }
+  
+    .footer-left p {
+      font-size: 16px;
+      max-width: 90vw;
+    }
+  
+    .footer-top-right {
+      justify-content: center;
+    }
+  
+    .footer-email-input {
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 20px;
+      padding-right: 40px;
+    }
+  
+    .footer-email-input input {
+      font-size: 16px;
+      width: 150px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      font-size: 16px;
+    }
+  
+    .footer-bottom-right {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
