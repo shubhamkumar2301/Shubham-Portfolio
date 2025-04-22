@@ -95,6 +95,30 @@
 }
 
 @media (max-width: 768px) {
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    padding: 0;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: 60px;
+    position: static;
+    transform: none;
+    object-fit: contain;
+  }
+  
   .nav-menu {
     position: fixed;
     top: 0;
